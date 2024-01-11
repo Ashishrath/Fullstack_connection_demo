@@ -1,16 +1,14 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 
 function App() {
-  const [content, setContent] = useState([
-    {
-      id: 1,
-      title: "Title-1"
-    }
-  ]); 
+  // const [content, setContent] = useState([
+  //   {
+  //     id: 1,
+  //     title: "Title-1"
+  //   }
+  // ]); 
 
   useEffect(() => {
     axios.get("api/content")
